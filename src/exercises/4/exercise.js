@@ -4,6 +4,7 @@
 
 function greeting(firstName, lastName) {
   let welcomeGreeting;
-
+  welcomeGreeting=`Welcome Mr.${firstName} ${lastName}`
   console.log(welcomeGreeting);
 }
+greeting('Ram','Charan')

@@ -3,8 +3,9 @@
 
 function checkIfArray(input) {
   let isInputAnArray = false;
-
-  //...
+  if(Array.isArray(input)){
+    isInputAnArray = true;
+  }
 
   if (isInputAnArray) {
     console.log("Given input is an Array");
@@ -12,3 +13,4 @@ function checkIfArray(input) {
     console.log("Given input is not an Array");
   }
 }
+checkIfArray([1,2,3]);

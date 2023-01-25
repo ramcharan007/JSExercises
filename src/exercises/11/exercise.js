@@ -2,4 +2,15 @@
 // - Use Array methods
 // - Do not use loops
 
-function sumOfArray(inputArray) {}
+function sumOfArray(inputArray) {
+    let sum=0;
+    function func(value,index,array){
+        sum+=value;
+        
+    }
+    inputArray.forEach(func);
+    console.log(sum);
+}
+
+
+sumOfArray([1,2,3,4]);

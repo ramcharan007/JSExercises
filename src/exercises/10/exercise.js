@@ -15,4 +15,14 @@
 		}
 	]
 */
-function findVoteEligibleCandidates(populationList) {}
+function findVoteEligibleCandidates(populationList) {
+	for(let i=0;i<populationList.length;i++){
+		if(populationList[i].age>18){
+			console.log(`${populationList[i].name} is eligible to vote`);
+		}
+		else{
+			console.log(`${populationList[i].name} is not eligible to vote`);
+		}
+	}
+}
+findVoteEligibleCandidates([{name:"Ravi",age:28}]);
