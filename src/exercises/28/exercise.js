@@ -1,7 +1,10 @@
 // Execute the below function.
 // - There is an issue with the order of messages
 // - Reason here why is it so.
+// Because JavaScript functions are executed in the sequence they are called.
 // - Explain in your own terms what are event loops?
+// An event loop is something that pulls stuff out of the queue and 
+// places it onto the function execution stack whenever the function stack becomes empty.
 
 function learnEventLoops() {
   console.log("Learning event loops");
@@ -13,4 +16,4 @@ function learnEventLoops() {
   }, 1); // 1 millisec
   console.log("Learning completed!!");
 }
-main();
+learnEventLoops();
