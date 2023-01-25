@@ -6,7 +6,7 @@
 
 class Printer {
   constructor() {
-    this.index = 0;
+    this.index = 1;
   }
 
   print() {
@@ -25,3 +25,5 @@ class Printer {
     this.index++;
   }
 }
+let P1=new Printer();
+P1.noDelayPrint();
