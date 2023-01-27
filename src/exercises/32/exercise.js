@@ -35,3 +35,50 @@
 
 
 */
+class Airport{
+  getInfoFromIATA(iataCode){
+    let encodedParams=new URLSearchParams();
+    encodedParams.append('iata',iataCode);
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '8d3691d9c9mshd8623ec7fa66ba3p1cc31ajsnbeca13510f60',
+            'X-RapidAPI-Host': 'airport-info.p.rapidapi.com'
+        },
+    };
+    
+    return Promise.all(
+        iataCode
+        .map(code =>
+        fetch("https://airport-info.p.rapidapi.com/airport?iata="+code, options)
+            .then(response => response.json())
+            .then(response => console.log(response))
+            .catch(err => console.error(err))
+        )
+        );
+  }
+  getInfoFromICAO(icao){
+    let encodedParams=new URLSearchParams();
+    encodedParams.append('iata',iataCode);
+    const options1 = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '8d3691d9c9mshd8623ec7fa66ba3p1cc31ajsnbeca13510f60',
+            'X-RapidAPI-Host': 'airport-info.p.rapidapi.com'
+        },
+    };
+    
+    return Promise.all(
+    icaoCode
+    .map(code =>
+    fetch("https://airport-info.p.rapidapi.com/airport?iata="+iataCode, options1)
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .catch(err => console.error(err))
+    )
+    );
+
+  }
+}
+A1 = new Airport();
+A1.getInfoFromIATA(['JFK']);
