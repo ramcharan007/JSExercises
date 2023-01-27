@@ -16,3 +16,12 @@
 // 	id : 1122,
 // 	age : 29
 // }
+
+const obj={
+    name: "Ravi",
+    id : 1122,
+    age : 29 
+}
+var {name,...others}=obj;
+console.log(name);
+console.log(others);
