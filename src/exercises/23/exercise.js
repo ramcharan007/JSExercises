@@ -14,8 +14,9 @@ class Printer {
   }
 
   noDelayPrint() {
-    console.log(`You asked me to print the sheet ${this.index}`);
+    
     setTimeout(() =>{
+      console.log(`You asked me to print the sheet ${this.index}`);
       this.print();
       this.index++;}
     , 0); // 0 milli-sec delay
@@ -23,8 +24,9 @@ class Printer {
   }
 
   noDelayPrint() {
-    console.log(`You asked me to print the sheet ${this.index}`);
+    
     setTimeout(() => {
+      console.log(`You asked me to print the sheet ${this.index}`);
       this.print();
       this.index++;
     }, 1000); //1 sec dely

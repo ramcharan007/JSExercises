@@ -11,4 +11,4 @@ function multiplyArrayByTwo(inputArray) {
   console.log(inputArray);
 }
 
-multiplyArrayByTwo([1,2,3,4]);
+

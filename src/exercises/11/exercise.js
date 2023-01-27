@@ -13,4 +13,3 @@ function sumOfArray(inputArray) {
 }
 
 
-sumOfArray([1,2,3,4]);

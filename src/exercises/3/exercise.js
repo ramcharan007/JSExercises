@@ -1,6 +1,6 @@
 // Complete the below function. Find if an input is array or not.
 //  - Comment what is the operator that you have used.
-
+// I have used isArray() method to check whether the input is array or notcd
 function checkIfArray(input) {
   let isInputAnArray = false;
   if(Array.isArray(input)){

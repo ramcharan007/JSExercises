@@ -11,4 +11,3 @@ function findTheLength(inputArray) {
     console.log(`Invalid Input`);
   }
 }
-findTheLength(1)

@@ -25,4 +25,3 @@ function findVoteEligibleCandidates(populationList) {
 		}
 	}
 }
-findVoteEligibleCandidates([{name:"Ravi",age:28}]);
